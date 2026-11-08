@@ -1,0 +1,10 @@
+[package]
+name = "cold-trap-pilot"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+cold-trap-sim = { workspace = true }
+serde = { workspace = true }

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cold Trap Maze</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Cold Trap Maze <span class="muted">agent benchmark</span></h1>
+    <nav>
+      <a href="/" class="active">Live</a>
+      <a href="/leaderboard.html">Leaderboard</a>
+      <span class="muted" id="ws-status">connecting</span>
+    </nav>
+  </header>
+  <main class="three">
+    <aside class="left">
+      <h2>Flying now</h2>
+      <ul id="live-list" class="runs"></ul>
+      <h2>Finished runs</h2>
+      <ul id="recent-list" class="runs"></ul>
+    </aside>
+    <section class="center">
+      <div class="toolbar">
+        <div id="map-header"></div>
+        <label><input type="checkbox" id="toggle-shortest"> shortest path</label>
+        <label><input type="checkbox" id="toggle-trails" checked> trails</label>
+      </div>
+      <canvas id="maze"></canvas>
+    </section>
+    <aside class="right" id="telemetry"></aside>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "name": "default",
+  "generator_version": 1,
+  "description": "Standard five-map set: two easy perfect mazes, two medium mazes with a few loops, one hard 24x24 maze with several loops.",
+  "physics": {
+    "dt": 0.008333333333333333,
+    "turn_seconds": 0.5,
+    "gravity": 2.0,
+    "max_thrust_accel": 6.0,
+    "max_rotate_deg": 45.0,
+    "ship_radius": 0.5,
+    "load_radius": 0.15,
+    "rope_length": 0.7,
+    "load_mass_ratio": 0.3,
+    "wall_half_thickness": 0.1,
+    "frame_stride": 4
+  },
+  "scoring": {
+    "completed": 1000,
+    "extra_attempt": 150,
+    "turn": 1,
+    "shortest_path": 250
+  },
+  "turn_limit": 300,
+  "attempt_limit": 5,
+  "maps": [
+    {
+      "seed": 23,
+      "width": 8,
+      "height": 8,
+      "loop_fraction": 0.0,
+      "cell_size": 3.0,
+      "class": "easy",
+      "difficulty": {
+        "path_length": 21,
+        "direction_changes": 11,
+        "dead_ends": 4,
+        "upward_moves": 3,
+        "upward_fraction": 0.14285714285714285,
+        "score": 58.0
+      },
+      "pilot_turns": 134
+    },
+    {
+      "seed": 30,
+      "width": 10,
+      "height": 10,
+      "loop_fraction": 0.0,
+      "cell_size": 3.0,
+      "class": "easy",
+      "difficulty": {
+        "path_length": 23,
+        "direction_changes": 15,
+        "dead_ends": 5,
+        "upward_moves": 8,
+        "upward_fraction": 0.34782608695652173,
+        "score": 84.5
+      },
+      "pilot_turns": 142
+    },
+    {
+      "seed": 36,
+      "width": 14,
+      "height": 14,
+      "loop_fraction": 0.05,
+      "cell_size": 3.0,
+      "class": "medium",
+      "difficulty": {
+        "path_length": 35,
+        "direction_changes": 18,
+        "dead_ends": 15,
+        "upward_moves": 2,
+        "upward_fraction": 0.05714285714285714,
+        "score": 99.5
+      },
+      "pilot_turns": 210
+    },
+    {
+      "seed": 24,
+      "width": 18,
+      "height": 18,
+      "loop_fraction": 0.08,
+      "cell_size": 3.0,
+      "class": "medium",
+      "difficulty": {
+        "path_length": 41,
+        "direction_changes": 20,
+        "dead_ends": 17,
+        "upward_moves": 5,
+        "upward_fraction": 0.12195121951219512,
+        "score": 121.5
+      },
+      "pilot_turns": 255
+    },
+    {
+      "seed": 29,
+      "width": 24,
+      "height": 24,
+      "loop_fraction": 0.15,
+      "cell_size": 3.0,
+      "class": "hard",
+      "difficulty": {
+        "path_length": 44,
+        "direction_changes": 21,
+        "dead_ends": 18,
+        "upward_moves": 17,
+        "upward_fraction": 0.38636363636363635,
+        "score": 164.0
+      },
+      "pilot_turns": 233
+    }
+  ]
+}
